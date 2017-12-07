@@ -1,7 +1,7 @@
 # This
-🌋 Powerful, Clean, Elegant Initialisation Sugar 
+🌋 Powerful, Clean, Elegant Initialisation Sugar 🌋
 
-# Project Title
+# Description
 
 This is a small syntactic extension to NSObject that makes it easier for you to initilialize your object in a very Swifty way.
 
@@ -54,7 +54,7 @@ Initialize in **this** way.
 
 
 ### A Real World Example
-```
+```swift
 class LoginViewController : UIViewController {
     var loginButton = UIButton().this {
         $0.setTitle("Login", for: .normal)
@@ -80,16 +80,13 @@ class LoginViewController : UIViewController {
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+just `clone` the repo and run on Xcode
 
 
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
