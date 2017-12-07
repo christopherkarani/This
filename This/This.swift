@@ -8,11 +8,11 @@
 
 import Foundation
 
-///Conform to this protocol if you want to use This intitilization
+///Conform to this protocol if you want to use This initialization
 public protocol This {}
 
 extension This {
-    // capture self in a closure and allow user to create object with minimalistic initialization
+    /// set values to the object right after it is initialized.
     public func this(_ object:  (Self) throws -> Void) rethrows -> Self {
         try object(self)
         return self
