@@ -10,6 +10,7 @@
 		18FA129C1FD920F80063A24A /* This.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FA12921FD920F80063A24A /* This.framework */; };
 		18FA12A11FD920F80063A24A /* ThisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FA12A01FD920F80063A24A /* ThisTests.swift */; };
 		18FA12A31FD920F80063A24A /* This.h in Headers */ = {isa = PBXBuildFile; fileRef = 18FA12951FD920F80063A24A /* This.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18FA12AD1FD9210D0063A24A /* This.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FA12AC1FD9210D0063A24A /* This.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		18FA129B1FD920F80063A24A /* ThisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FA12A01FD920F80063A24A /* ThisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThisTests.swift; sourceTree = "<group>"; };
 		18FA12A21FD920F80063A24A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18FA12AC1FD9210D0063A24A /* This.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = This.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		18FA12941FD920F80063A24A /* This */ = {
 			isa = PBXGroup;
 			children = (
+				18FA12AC1FD9210D0063A24A /* This.swift */,
 				18FA12951FD920F80063A24A /* This.h */,
 				18FA12961FD920F80063A24A /* Info.plist */,
 			);
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					18FA12911FD920F80063A24A = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					18FA129A1FD920F80063A24A = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18FA12AD1FD9210D0063A24A /* This.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +339,7 @@
 		18FA12A71FD920F80063A24A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cbk.This;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +362,7 @@
 		18FA12A81FD920F80063A24A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -376,6 +384,7 @@
 		18FA12AA1FD920F80063A24A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BTSZ26LN83;
 				INFOPLIST_FILE = ThisTests/Info.plist;
@@ -390,6 +399,7 @@
 		18FA12AB1FD920F80063A24A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BTSZ26LN83;
 				INFOPLIST_FILE = ThisTests/Info.plist;
