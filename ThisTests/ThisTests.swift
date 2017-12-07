@@ -16,6 +16,15 @@ class ThisTests: XCTestCase {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
+    func testThen() {
+        let queue = OperationQueue().then {
+            $0.name = "awesome"
+            $0.maxConcurrentOperationCount = 5
+        }
+        XCTAssertEqual(queue.name, "awesome")
+        XCTAssertEqual(queue.maxConcurrentOperationCount, 5)
+    }
+    
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
