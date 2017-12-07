@@ -17,7 +17,7 @@ class ThisTests: XCTestCase {
     }
     
     func testThen() {
-        let queue = OperationQueue().then {
+        let queue = OperationQueue().this {
             $0.name = "awesome"
             $0.maxConcurrentOperationCount = 5
         }

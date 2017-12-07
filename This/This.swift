@@ -11,7 +11,7 @@ import Foundation
 ///Conform to this protocol if you want to use This intitilization
 public protocol This {}
 
-extension This where Self: NSObject {
+extension This {
     // capture self in a closure and allow user to create object with minimalistic initialization
     public func this(_ object:  (Self) throws -> Void) rethrows -> Self {
         try object(self)
